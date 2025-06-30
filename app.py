@@ -5,8 +5,6 @@ import pickle
 import os
 
 app = Flask(__name__)
-
-# Load the saved model from the 'model' directory
 model_path = os.path.join('model', 'c_card_approval_pred.pickle')
 with open(model_path, 'rb') as handle:
     model = pickle.load(handle)
